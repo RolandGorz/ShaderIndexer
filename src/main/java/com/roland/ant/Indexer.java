@@ -45,7 +45,7 @@ public class Indexer extends Task {
         }
     }
 
-    private void handleDirectory(List<String> paths, File directory, URI relativePathBase) throws IOException {
+    private void handleDirectory(List<String> paths, File directory, URI relativePathBase) {
         File[] files = directory.listFiles();
         if (files == null) {
             return;
